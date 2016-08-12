@@ -839,3 +839,25 @@ border: 2px solid #fff;
 }
 
 
+#listaservicos li {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+}
+#listaservicos li a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding-left: 5px;
+}
+#listaservicos div {
+    font-size: 12px;
+    font-weight: lighter;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
