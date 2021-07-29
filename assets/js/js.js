@@ -23,14 +23,11 @@
 		   {
 			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			  {
-				 var a = JSON.parse(xmlhttp.responseText);
-				 //alert(a.texto.length);
-				 //document.getElementById("demo").value=a.texto[1];
-
+				var a = JSON.parse(xmlhttp.responseText);
 				var conteudo = ""; 
 				for (let i = 0; i < 9; i++) {
 				  if(a.cat[i] != undefined){
-					conteudo += '<div class="col-12 col-md-12"><div class="card"><div class="card-header"></div><div class="card-body"><h4 class="card-title">'+a.titulo[i]+'</h4><p class="card-text">'+a.texto[i]+' </p></div><div class="card-footer"><a href="#" style="border: none; font-size: 12px;"><i class="fa fa-bookmark"></i> '+a.cat[i]+'</a></div></div></div><div style="clear:both"></div>';
+					conteudo += '<div class="col-12 col-md-12" style="margin-bottom: 30px"><div class="card"><div class="card-header"></div><div class="card-body"><h4 class="card-title">'+a.titulo[i]+'</h4><p class="card-text">'+a.texto[i]+' </p></div><div class="card-footer"><a href="#" style="border: none; font-size: 12px;"><i class="fa fa-bookmark"></i> '+a.cat[i]+'</a></div></div></div><div style="clear:both"></div>';
 				  }
 				} 
 				document.getElementById("conteudo").innerHTML="Loading...";
